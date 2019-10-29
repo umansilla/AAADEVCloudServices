@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service xmlns="http://archiveschemas.aus.avaya.com/properties"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://archiveschemas.aus.avaya.com/properties properties.xsd"
+	name="AAADEVCloudServices" version="1.0.0.2.5" application="AAADEVCloudServices-1.0.0.2.5">
+	<smgr>
+		<description>My Service</description>
+		<term_order>1</term_order>
+		<term_group>1</term_group>
+		<fs_component>true</fs_component>
+		<attribute name="apiKey">
+			<displayName>Google Cloud Text To Speech Api Key</displayName>
+			<helpInfo>Google Cloud Text To Speech Api Key</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>AIzaSyAb8txQ6r49Cj67Bq4sJi9QE_k1CJusVYU</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+		<attribute name="route">
+			<displayName>Cambiar de ruta POST a Google</displayName>
+			<helpInfo>Cambiar de ruta POST a Google</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>Breeze</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+		<attribute name="vps">
+			<displayName>FQDN VPS</displayName>
+			<helpInfo>FQDN VPS</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>35.196.138.86:8080</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+		<attribute name="IBMTTSUserName">
+			<displayName>IBM TTS User Name</displayName>
+			<helpInfo>Usuario proporcionado por IBM</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>1a750c00-9343-4032-9e4d-dd485052692d</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+		<attribute name="IBMTTSPassword">
+			<displayName>IBM TTS Password</displayName>
+			<helpInfo>Password proporcionado por IBM</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>g7rmue4UsCWP</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+		<attribute name="TagoIOAccountToken">
+			<displayName>TagoIO Account Token</displayName>
+			<helpInfo>Token proporcionado en desde el sitio de Tago.io</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>eadf72d5-d081-4d0e-82a7-c217a5bbcfd5</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+				<attribute name="AvayaSpacesAccountToken">
+			<displayName>Avaya Spaces Account Token</displayName>
+			<helpInfo>Token Avaya Spaces</helpInfo>
+			<global>false</global>
+			<validation name="AnyString">
+				<type>STRING</type>
+			</validation>
+			<portlet_changeable>false</portlet_changeable>
+			<admin_visible>true</admin_visible>
+			<admin_changeable>true</admin_changeable>
+			<factory>
+				<value>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkX3NpZyI6InNqUDFzdzQtZ2JUMTlBRmU4cTk1ZXFvR0lzTjR1UHRIZ3hMeXdEMlIzRWciLCJwcm9kdWN0X3R5cGUiOiJhY2NvdW50cyIsImxhc3R1cGRhdGV0aW1lIjoiMjAxOS0wOC0yNlQxODo0MzowNi4wNDMiLCJpc3MiOiJ6YW5nLmlvIiwicHVibGlja2V5aWQiOiJhZ3h6Zm05dVpYTnVZVEl3TVRSeUdnc1NEVWRLZDNSUWRXSnNhV05MWlhrWWdJQ1F4WU9obXdzTSIsImV4cCI6MTU2OTQ1MDUxNywidXNlcl9pZCI6ImFneHpmbTl1WlhOdVlUSXdNVFJ5RVFzU0JGVnpaWElZZ0lDUW5zdW9wd29NIiwidmVyIjoiMi4wIn0.adKTfNa4Q9gIgJ6bYm5DLldpyDC5LuEruBELfBmYKcckVPsY_o4Jm0XTW-fJTqUO1Tg-mCYwU2zxSKOd-9d-X1Dl09M4ILOwneHa3htcT9bnX-WAwYiO5HkvK60nMjpMzEmwEgJpA3KBVaTzUazDQvkHgQz7zWhelkcTybDiWf7pac2BzXiVEVLr8zkGhscRXgP6a43PtUOfDN00oIiqVn5n9L6Var_80qv915nVBl3NCwaWLNEWP8P_qIbckyk5jRlqL6WDPA08bZxefvgfn9dikPvMRPm7Fvjytp2hOHvEQnjR5lAy0FDxneBi6r91bvjbMY3PXqShj3nQG5ShnQ</value>
+				<user_changeable>true</user_changeable>
+			</factory>
+		</attribute>
+	</smgr>
+	<!-- <log_space>10MB</log_space> -->
+</service>
